@@ -1,0 +1,38 @@
+{
+    "processes": {
+        "mappings": {
+            "properties": {
+                "CPU in Use": {
+                    "type": "float"
+                },
+                "Memory Usage": {
+                    "type": "float"
+                },
+                "Memory in Use": {
+                    "type": "float"
+                },
+                "Name": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "PID": {
+                    "type": "long"
+                },
+                "Time": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
